@@ -10844,7 +10844,7 @@ html {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
   background-color: rgb(214 203 181 / 94%) !important;
 }
 .page-section .page-section-heading {
@@ -10999,7 +10999,7 @@ html {
 
 @media (min-width: 992px) {
   .masthead {
-        padding-top: calc(1rem + 100px);
+        padding-top: calc(1rem + 89px);
         padding-bottom: 0rem;
   }
   .masthead .masthead-heading {
@@ -11129,8 +11129,8 @@ html {
 }
 
 .submit-link:hover {
-    background: #ff3300;
-    box-shadow: 0 8px 20px rgba(255, 51, 0, 0.6);
+    background: #d3d3d3; /* Light grey color */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adjusted for a softer effect */
     transform: translateY(-3px);
 }
 
@@ -11173,13 +11173,73 @@ html {
     background: linear-gradient(135deg, #feb47b, #ff7e5f);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 576px) {
-  a.main-logo {
-    width: 50%;
+/* Default styles for mobile-first approach */
+a.main-logo {
+    width: 60%;
 }
+
 .logo {
-    width: 64%;
+    width: 50%;
     height: auto;
     display: inline-block;
 }
+
+/* Tablet screens (min-width: 640px) */
+@media (min-width: 640px) {
+    a.main-logo {
+        width: 50%;
+    }
+    .logo {
+        width: 64%;
+    }
+}
+
+/* Small desktops and large tablets (min-width: 768px) */
+@media (min-width: 768px) {
+    a.main-logo {
+        width: 40%;
+    }
+    .logo {
+        width: 50%;
+    }
+}
+
+/* Larger desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+    a.main-logo {
+        width: 30%;
+    }
+    .logo {
+        width: 40%;
+    }
+}
+
+/* Extra-large screens (min-width: 1440px) */
+@media (min-width: 1440px) {
+    a.main-logo {
+        width: 25%;
+    }
+    .logo {
+        width: 30%;
+    }
+}
+
+/* Small mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    a.main-logo {
+        width: 70%;
+    }
+    .logo {
+        width: 40%;
+    }
+}
+
+/* Small screens up to 740px */
+@media (max-width: 740px) {
+    a.main-logo {
+        width: 50%;
+    }
+    .logo {
+        width: 14%;
+    }
 }

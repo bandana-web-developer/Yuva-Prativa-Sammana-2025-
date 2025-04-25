@@ -11243,3 +11243,12 @@ a.main-logo {
         width: 14%;
     }
 }
+.blink-button {
+  animation: blinker 5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

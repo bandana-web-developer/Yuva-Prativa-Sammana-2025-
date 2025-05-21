@@ -20,35 +20,48 @@
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a href="#page-top" class="main-logo">
-                <img class="logo" src="assets/img/Yuba Prativa samana.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                Menu <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Award Categories</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded blink-button text-white bg-danger " target="_blank"
-                            href="https://argusenglish.in/vote-pooling">
-                            Vote
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <div class="container">
+    <div class="d-flex w-100 justify-content-between align-items-center">
+      <!-- Left: Logo -->
+      <a href="#page-top" class="main-logo d-flex align-items-center">
+        <img src="assets/img/Yuba Prativa samana.png" alt="Logo" style="height: 40px;">
+      </a>
+
+      <!-- Right: Vote button (mobile only) + Menu toggle -->
+      <div class="d-flex align-items-center">
+        <a class="nav-link py-2 px-3 rounded blink-button text-white bg-danger d-block d-md-none me-2"
+          href="https://argusenglish.in/vote-pooling" aria-expanded="false">
+          Vote
+        </a>
+
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse mt-2" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Award Categories</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1 d-none d-md-block">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded blink-button text-white bg-danger" target="_blank"
+            href="https://argusenglish.in/vote-pooling">
+            <i class="fas fa-vote-yea"></i> Vote
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <!-- Masthead-->
     <header class="masthead  text-white text-center">

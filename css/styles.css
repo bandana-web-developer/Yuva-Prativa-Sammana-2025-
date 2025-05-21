@@ -11244,7 +11244,7 @@ a.main-logo {
     }
 }
 .blink-button {
-  animation: blinker 5s linear infinite;
+  animation: blinker 2s linear infinite;
 }
 
 @keyframes blinker {
